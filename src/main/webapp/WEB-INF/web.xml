@@ -8,10 +8,16 @@ http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" version="4.0">
     <servlet-name>Dupa12</servlet-name>
     <servlet-class>pl.coderslab.Servlet12</servlet-class>
   </servlet>
-  
+
   <servlet-mapping>
     <servlet-name>Dupa12</servlet-name>
     <url-pattern>/dupa12</url-pattern>
   </servlet-mapping>
+
+
+  <error-page>
+    <error-code>500</error-code>
+    <location>/WEB-INF/jdbc/global_error.jsp</location>
+  </error-page>
   
 </web-app>
